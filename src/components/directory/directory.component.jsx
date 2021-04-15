@@ -10,6 +10,7 @@ import './directory.styles.scss'
 
 const Directory = ({sections}) => (
   <div className='directory-menu'>
+    {console.log(sections)}
       {
           sections.map(({id, ...otherSectionProps}) => (
               <MenuItem key={id} {...otherSectionProps} />
